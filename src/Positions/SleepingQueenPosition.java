@@ -1,6 +1,12 @@
 package Positions;
 
-import Positions.Position;
+public class SleepingQueenPosition{
+    private int cardIndex;
 
-public class SleepingQueenPosition extends Position {
+    public SleepingQueenPosition(int cardIndex){
+        this.cardIndex = cardIndex;
+    }
+    public int getCardIndex(){
+        return cardIndex;
+    }
 }
