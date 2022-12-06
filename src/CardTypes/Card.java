@@ -1,13 +1,5 @@
 package CardTypes;
 
-enum CardType{
-    Number,
-    King,
-    Knight,
-    SleepingPosion,
-    Dragon,
-    MagicWand
-}
 
 public class Card {
     private CardType type;
@@ -16,6 +8,10 @@ public class Card {
     public Card(CardType type, int value){
         this.type = type;
         this.value = value;
+    }
+
+    public CardType getCardType(){
+        return type;
     }
 
 }
